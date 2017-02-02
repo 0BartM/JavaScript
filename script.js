@@ -15,9 +15,9 @@ $(document).ready(function(){
                 var movie = movies.results[i];
                 $("<div>").attr("class","movie movie"+i).appendTo("#listing");
                 $("<div>").attr("class","movie-image movie-image"+i).appendTo(".movie"+i);
-                $("<a>").attr("href","details.html#"+movie.id).html("<img src='http://image.tmdb.org/t/p/w185/"+movie.poster_path+"' alt='poster'>").appendTo(".movie-image"+i);
+                $("<a>").attr("href","detail.html#"+movie.id).html("<img src='http://image.tmdb.org/t/p/w185/"+movie.poster_path+"' alt='poster'>").appendTo(".movie-image"+i);
                 $("<div>").attr("class","movie-info movie-info"+i).appendTo(".movie"+i);
-                $("<a>").attr("href","details.html#"+movie.id).attr("class","movie-title").text(movie.title).appendTo(".movie-info"+i);
+                $("<a>").attr("href","detail.html#"+movie.id).attr("class","movie-title").text(movie.title).appendTo(".movie-info"+i);
             }
         };
 
